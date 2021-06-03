@@ -16,7 +16,7 @@
     "coverage": "nyc mocha && nyc report --reporter=html && nyc report --reporter=json-summary",
     "lcov": "nyc mocha && nyc report --reporter=lcov",
     "posttest": "npm run lint",
-    "postinstall": "tsc --outDir ./build"
+    "prepack": "tsc --outDir ./build"
   },
   "repository": {
     "type": "git",
